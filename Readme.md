@@ -10,3 +10,8 @@ $ sudo unzip ./terraform_0.11.13_linux_amd64.zip -d /usr/local/bin/
 All done. The only thing that is left now, is to check if terraform is successfully installed, with the following command:
 
 $ terraform -v
+
+
+
+Please run "terraform init" for initializing a terraform.
+After that executing run " terraform apply"
