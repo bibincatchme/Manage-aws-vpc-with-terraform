@@ -29,7 +29,7 @@ resource "aws_subnet" "test_public-subnets" {
     vpc_id = "${aws_vpc.test_tf_vpc.id}"
     cidr_block = "${element(var.public_subnet_cidr,count.index)}"
     availability_zone = "${element(var.availability_zone,count.index)}"
-
+     map_public_ip_on_launch = true
 
     tags = {
         Name = "Public Subnet-${count.index+1}"
